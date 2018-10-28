@@ -1,0 +1,27 @@
+<Nav segment={child.segment}/>
+
+<main>
+	<div class="ui container content full-height">
+		<svelte:component this={child.component} {...child.props}/>
+	</div>
+</main>
+
+<script>
+	export default {
+		components: {
+			Nav: '../components/Nav.html'
+		}
+	};
+</script>
+
+<style>
+	.full-height {
+    height:auto !important; /* real browsers */
+    height:calc(100vh - 40px); /* IE6: treaded as min-height*/
+    min-height:calc(100vh - 40px) !important; /* real browsers */
+	}
+
+	.content {
+		padding: 20px;
+	}
+</style>

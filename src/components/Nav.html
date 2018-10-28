@@ -1,0 +1,21 @@
+<div class="ui secondary pointing menu no-margin-bottom white-background sticky-top">
+	<div class="ui container">
+		<a href="." class='item {segment === undefined ? "active" : ""}'>
+			Home
+		</a>
+		<a href="about" class='item {segment === "about" ? "active" : ""}'>
+			About
+		</a>
+		<a rel=prefetch href="blog" class='item {segment === "blog" ? "active" : ""}'>
+			Blog
+		</a>
+	</div>
+</div>
+
+<style>
+	.sticky-top {
+		position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+	}
+</style>

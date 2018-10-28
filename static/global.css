@@ -1,0 +1,7 @@
+	html,body {
+		height: 100%;
+		background: seashell !important
+	}
+	.no-margin-bottom {
+		margin-bottom: 0 !important;
+	}
